@@ -11,9 +11,10 @@ const App=()=>{
       key:alanKey,
       onCommand:({command,articles})=>{
         if(command==='newHeadlines'){
-          //alert('This code was executed');
-         // console.log(articles);
+          
+        
          setNewsArticles(articles);
+        
 
         }
 
