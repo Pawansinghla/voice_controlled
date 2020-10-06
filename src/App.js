@@ -28,10 +28,12 @@ const App=()=>{
 
         }
         else if(command==='open'){
+          //three=3
+          //four, twenty
          const parsedNumber=number.length>2? wordsToNumbers():number;
          const article=articles[parsedNumber-1];
          if(parsedNumber>20){
-           alanBtn().playText("Please try that again")
+           alanBtn().playText("Please try that again.")
          }
          else if(article){
           window.open(article.url,'_blank');
@@ -45,6 +47,8 @@ const App=()=>{
 
     })
   },[])
+
+
   return (
     <div>
       <div className={classes.logoContainer}> 
